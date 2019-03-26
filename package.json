@@ -1,0 +1,42 @@
+{
+  "name": "graphql-baby",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.1.5",
+    "apollo-cache-inmemory": "^1.5.1",
+    "apollo-client": "^2.5.1",
+    "apollo-link": "^1.2.11",
+    "apollo-link-http": "^1.5.14",
+    "apollo-link-schema": "^1.2.2",
+    "apollo-link-ws": "^1.0.17",
+    "apollo-live-client": "^0.2.1",
+    "apollo-live-server": "^0.2.0",
+    "apollo-morpher": "^0.2.0",
+    "apollo-server-express": "^2.4.8",
+    "apollo-upload-client": "^10.0.0",
+    "graphql": "^14.1.1",
+    "graphql-load": "^0.1.1",
+    "graphql-tools": "^4.0.4",
+    "graphql-type-json": "^0.2.2",
+    "merge-graphql-schemas": "^1.5.8",
+    "meteor-node-stubs": "^0.4.1",
+    "react": "^16.5.0",
+    "react-apollo": "^2.5.3",
+    "react-dom": "^16.5.0",
+    "subscriptions-transport-ws": "^0.9.16",
+    "uuid": "^3.3.2"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.jsx",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
